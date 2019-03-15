@@ -1,0 +1,23 @@
+{
+  "name": "shadowapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sblackstealth/shadowApi.git"
+  },
+  "author": "STEALTHY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sblackstealth/shadowApi/issues"
+  },
+  "homepage": "https://github.com/sblackstealth/shadowApi#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg-promise": "^8.6.3"
+  }
+}
