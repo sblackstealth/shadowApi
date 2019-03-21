@@ -1,10 +1,15 @@
 # shadowApi
-in the command line
-npm install in the command line;
-navigate to backend folder;
-navigate to db folder;
+git clone
+git@github.com:sblackstealth/shadowApi.git
+In the command line
+cd into shadowApi
+npm install;
+cd to backend folder;
+cd to db folder;
+assuming you have postgres installed
+(if not download and install from https://postgresapp.com/downloads.html)
 psql -f homework.sql;
-navigate back to backend folder;
+cd back to backend folder;
 npm start.
 
 endpoints:
