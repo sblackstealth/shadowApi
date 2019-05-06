@@ -34,7 +34,7 @@ function getAllUsersInRole(req,res) {
         .any(
             `SELECT *
              FROM users
-             WHERE role=$1`,req.params.role
+             WHERE user_role=$1`,req.params.user_role|"user"
         )
         .then(data => {
             res.json(data);
@@ -85,7 +85,7 @@ function createUser(req,res){
                 user_email: req.body.user_email,
                 family_name:req.body.last_name,
                 given_name: req.body.first_name,
-                user_role: req.body.role,
+                user_role: req.body.user_role,
                 sms_user:req.body.sms_user,
             }
         )
