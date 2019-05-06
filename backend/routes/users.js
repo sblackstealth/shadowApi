@@ -4,7 +4,7 @@ var db = require('../db/queries');
 
 /* -----------GET REQUEST----------- */
 router.get('/',db.getAllUsers);
-router.get('/role/:role',db.getAllUsersInRole);
+router.get('/role/:user_role*?',db.getAllUsersInRole);
 router.get('/page/:page*?',db.getAllUsersOnPage);
 router.get('/limit/:limit*?',db.getLimitedUsers);
 router.get('/id/:user_id', db.getSingleUser);
